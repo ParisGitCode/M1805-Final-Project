@@ -7,6 +7,12 @@ function setup() {
   //table = loadTable(url, 'csv', 'header');
 }
 
+
+function preload(){
+  img1 =loadImage("images/god.png")
+  img2 =loadImage("images/PythSoc.png")
+}
+
 function draw(){
     background(200);
 
