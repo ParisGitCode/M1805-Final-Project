@@ -9,7 +9,7 @@ function setup() {
 
 
 function preload(){
-  img1 =loadImage("images/god.png")
+  img1 =loadImage("images/soil.png")
   img2 =loadImage("images/PythSoc.png")
 }
 
