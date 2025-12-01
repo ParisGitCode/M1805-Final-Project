@@ -7,7 +7,6 @@ function setup() {
   //table = loadTable(url, 'csv', 'header');
 }
 
-
 function preload(){
   img1 =loadImage("images/soil.png")
   img2 =loadImage("images/PythSoc.png")
