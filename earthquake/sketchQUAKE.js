@@ -4,8 +4,8 @@ let table;
 let bg;
 
 function preload() {
-  // Load background image and earthquake data
-  bg = loadImage('assets/Leibniz10.png'); 
+  // here im addin background data for the image
+  bg = loadImage('assets/grass.png'); 
   table = loadTable(url, 'csv', 'header');
 }
 
@@ -18,28 +18,28 @@ function setup() {
 function draw() {
   background(bg);
 
-  // Timer display
+  // setting the time
   if (frameCount % 60 === 0) timer++;
   fill(255);
   text('Timer: ' + timer, width/2, height - 20);
 
-  // Refresh data every 60 seconds
+  // here im refereshing this every 60 seconds
   if (timer > 60) {
     table = loadTable(url, 'csv', 'header');
     timer = 0;
   }
 
-  // Draw earthquakes
+
   let rows = table.getRowCount();
   let x = 70;
-  let y = 50;
+  let y = 50;   // drawing the eaethqaukes here
 
   for (let row = 0; row < rows; row++) {
     let name = table.getString(row, 'place');
     let nameArr = name.split(" of ");
     let magnitude = float(table.getString(row, 'mag'));
 
-    // Color code by magnitude
+    // different shades
     if (magnitude < 2) {
       fill(0, 200, 0, 180); // green for small
     } else if (magnitude < 4) {
@@ -55,7 +55,6 @@ function draw() {
     text(nameArr.length > 1 ? nameArr[1] : name, x, y + 25);
     text(magnitude, x, y + 40);
 
-    // Move grid position
     x += width / 3;
     if (x > width - 70) {
       y += 80;
