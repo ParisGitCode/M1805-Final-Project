@@ -4,9 +4,7 @@ First, I declared a variable called timer and set it to 0. I also added a url th
 
 Then, in the preload() function, I loaded the background image (grass.png) and the earthquake data table from the URL. I did this here because preload() ensures that assets are ready before the sketch starts running.
 
-Next, in the setup() function, I created a canvas that matches the size of my background image (640 by 382). I also aligned the text to the center and set the text size to 12 so that labels would be readable.
-
-After that, in the draw() function, I started by drawing the background image each frame. I added a timer by checking if the frame count was divisible by 60 (roughly one second at 60 FPS). Each time that condition was true, I incremented the timer. I displayed the timer at the bottom of the canvas in white text.
+Next, in the setup() function, I created a canvas that matches the size of my background image (640 by 382). I also aligned the text to the center and set the text size to 12 so that labels would be readable. I stuggled with this a bit but managed to fix it up. in the draw() function, I started by drawing the background image each frame. I added a timer by checking if the frame count was divisible by 60 (roughly one second at 60 FPS). Each time that condition was true, I incremented the timer. I displayed the timer at the bottom of the canvas in white text.
 
 Then, I made sure the earthquake data refreshed every 60 seconds. If the timer went above 60, I reloaded the table from the USGS feed and reset the timer back to zero.
 
