@@ -1,7 +1,7 @@
 # M1805-Final-Project
 
 
-For my final project I wanted to create a gallery of abstract art through the data of Earthquakes. I included my own photos for the layout of these pages.
+For my final project I wanted to create a gallery of abstract art through the data of Earthquakes. I included my own photos for the layout of these pages. I'm not exactly well-skilled in p5.js, therefore it took a lot of googling and YouTube and trial and error for this to work. Originally, I had written an entire code of volcanic activity and earthquake data however this ended up being extremely long and unnecessary at times.
 
 First, I declared a variable called timer and set it to 0. I also added a url that points to the USGS earthquake feed in CSV format, and I created placeholders for table and bg so I could load data and a background image later.
 
