@@ -1,16 +1,20 @@
+// I organized this by placing a timer and settin the time to zero. Initiating this is how I can get stale and accurate timing for the live Earthwauke data while chanign the directions of the shapes.
+
 let timer = 0; 
 let url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.csv";
 let table;
 let bg;
 
+//  Here I am setting a table and background to place this data on the page.
+
 function preload() {
-  // here im addin background data for the image
+  // here I'm adding background an image for the background. This image is a photo of the soil and grass that I had taken personally, as well as some wood patterns.
   bg = loadImage('assets/grass.png'); 
   table = loadTable(url, 'csv', 'header');
 }
 
 function setup() {
-  createCanvas(640, 382); // match background size
+  createCanvas(640, 382); // Here I'm mmatching the image with the background size showing in the function.
   textAlign(CENTER, CENTER);
   textSize(12);
 }
