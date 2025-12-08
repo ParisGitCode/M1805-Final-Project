@@ -22,7 +22,7 @@ function setup() {
 function draw() {
   background(bg);
 
-  // setting the time
+  // Here I'm making the timer change as the project progresses.
   if (frameCount % 60 === 0) timer++;
   fill(255);
   text('Timer: ' + timer, width/2, height - 20);
