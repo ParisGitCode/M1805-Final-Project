@@ -1,12 +1,11 @@
 # M1805-Final-Project
 
+
+For my final project I wanted to create a gallery of abstract art through the data of Earthquakes. I included my own photos for the layout of these pages.
+
 First, I declared a variable called timer and set it to 0. I also added a url that points to the USGS earthquake feed in CSV format, and I created placeholders for table and bg so I could load data and a background image later.
 
-Then, in the preload() function, I loaded the background image (grass.png) and the earthquake data table from the URL. I did this here because preload() ensures that assets are ready before the sketch starts running.
-
-Next, in the setup() function, I created a canvas that matches the size of my background image (640 by 382). I also aligned the text to the center and set the text size to 12 so that labels would be readable. I stuggled with this a bit but managed to fix it up. in the draw() function, I started by drawing the background image each frame. I added a timer by checking if the frame count was divisible by 60 (roughly one second at 60 FPS). Each time that condition was true, I incremented the timer. I displayed the timer at the bottom of the canvas in white text.
-
-Then, I made sure the earthquake data refreshed every 60 seconds. If the timer went above 60, I reloaded the table from the USGS feed and reset the timer back to zero.
+Then, in the preload() function, I loaded the background image (grass.png) and the earthquake data table from the URL. I did this here because preload() ensures that assets are ready before the sketch starts running, and in the setup() function, I created a canvas that matches the size of my background image (640 by 382). I also aligned the text to the center and set the text size to 12 so that labels would be readable. I stuggled with this a bit but managed to fix it up. in the draw() function, I started by drawing the background image each frame. I added a timer by checking if the frame count was divisible by 60 (roughly one second at 60 FPS). Each time that condition was true, I incremented the timer. I displayed the timer at the bottom of the canvas in white text. From there I made sure the earthquake data refreshed every 60 seconds. If the timer went above 60, I reloaded the table from the USGS feed and reset the timer back to zero.
 
 After that, I grabbed the number of rows in the table and set starting positions (x = 70, y = 50) for drawing the earthquake data. I looped through each row, pulling out the place and magnitude. I split the place string on “of” so I could display a cleaner location name. For the visualization, I used different colors depending on the magnitude: green for small earthquakes (<2), orange for medium ones (<4), and red for strong ones (≥4). I drew circles (ellipse) sized according to the magnitude, and then I added text labels for the location and magnitude just below each circle.
 
