@@ -36,7 +36,7 @@ function draw() {
 
   let rows = table.getRowCount();
   let x = 70;
-  let y = 50;   // drawing the eaethqaukes here
+  let y = 50;   // Drawing the eaethqaukes here with the x and y cooridnates.
 
   for (let row = 0; row < rows; row++) {
     let name = table.getString(row, 'place');
