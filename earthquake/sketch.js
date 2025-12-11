@@ -12,7 +12,6 @@ let concrete;
 
 //  Here I am setting a table and background to place this data on the page. I also didn't know how to put the images in a folde so I've just kind of elft it sitting out.
 
-
 function preload() {
   // here I'm adding background an image for the background. This image is a photo of the soil and grass that I had taken personally, as well as some wood patterns.
   bg = loadImage('earthquake/grass.jpg'); // I can hardly get these images to work for some reason. I have no clue why. I also wanted to add sound that I gathered to it, just of the wind but I'm unsure if it would work.
