@@ -9,7 +9,7 @@ let bg;
 
 function preload() {
   // here I'm adding background an image for the background. This image is a photo of the soil and grass that I had taken personally, as well as some wood patterns.
-  bg = loadImage('assets/grass.png'); 
+  bg = loadImage('assets/grass.jpg'); 
   table = loadTable(url, 'csv', 'header');
 }
 
