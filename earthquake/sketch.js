@@ -9,7 +9,7 @@ let bg;
 
 function preload() {
   // here I'm adding background an image for the background. This image is a photo of the soil and grass that I had taken personally, as well as some wood patterns.
-  bg = loadImage('assets/grass.jpg'); 
+  bg = loadImage('earthquake/grass.jpg'); // I can hardly get these images to work for some reason. I have no clue why. I also wanted to add sound that I gathered to it, just of the wind but I'm unsure if it would work.
   table = loadTable(url, 'csv', 'header');
 }
 
