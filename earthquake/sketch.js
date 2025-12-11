@@ -4,6 +4,7 @@ let timer = 0;
 let url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.csv";
 let table;
 let bg;
+let cornerImg;
 
 //  Here I am setting a table and background to place this data on the page. I also didn't know how to put the images in a folde so I've just kind of elft it sitting out.
 
