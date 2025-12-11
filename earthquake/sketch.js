@@ -5,14 +5,17 @@ let url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.cs
 let table;
 let bg;
 
-//  Here I am setting a table and background to place this data on the page.
+//  Here I am setting a table and background to place this data on the page. I also didn't know how to put the images in a folde so I've just kind of elft it sitting out.
+
 
 function preload() {
   // here I'm adding background an image for the background. This image is a photo of the soil and grass that I had taken personally, as well as some wood patterns.
   bg = loadImage('earthquake/grass.jpg'); // I can hardly get these images to work for some reason. I have no clue why. I also wanted to add sound that I gathered to it, just of the wind but I'm unsure if it would work.
   table = loadTable(url, 'csv', 'header');
+  
+  cornerImg = loadImage('earthquake/grass2.jpg'); //I'm unsure if this will work but the goal is to place this on the top left part of the screen. It's an image of the soil and grass.
+  image(cornerImg, 0, 0); // The artistic viewpoint was to get a shaky image to kind of play the effect of an earthquake.
 }
-
 function setup() {
   createCanvas(640, 382); // Here I'm mmatching the image with the background size showing in the function.
   textAlign(CENTER, CENTER);
