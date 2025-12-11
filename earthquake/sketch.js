@@ -48,7 +48,6 @@ function draw() {
     timer = 0;
   }
 
-
   let rows = table.getRowCount();
   let x = 70;
   let y = 50;   // Drawing the eaethqaukes here with the x and y cooridnates.
