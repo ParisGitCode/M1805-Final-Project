@@ -14,7 +14,7 @@ function preload() {
   table = loadTable(url, 'csv', 'header');
   
   cornerImg = loadImage('earthquake/grass2.jpg'); //I'm unsure if this will work but the goal is to place this on the top left part of the screen. It's an image of the soil and grass.
-  image(cornerImg, 0, 0); // The artistic viewpoint was to get a shaky image to kind of play the effect of an earthquake.
+ // The artistic viewpoint was to get a shaky image to kind of play the effect of an earthquake.
 }
 function setup() {
   createCanvas(640, 382); // Here I'm mmatching the image with the background size showing in the function.
@@ -24,6 +24,7 @@ function setup() {
 
 function draw() {
   background(bg);
+  image(cornerImg, 0, 0, 100, 100); // Here I'm trying to place the image in the top left.
 
   // Here I'm making the timer change as the project progresses.
   if (frameCount % 60 === 0) timer++;
