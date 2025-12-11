@@ -31,22 +31,11 @@ function setup() {
   textSize(12);
 }
 
-image(cornerImg, 0, 0, 100, 100);
-
-// Top-right corner
-image(cornerImg, 640 - 100, 0, 100, 100);
-
-// Bottom-left corner
-image(cornerImg, 0, 382 - 100, 100, 100);
-
-// Bottom-right corner
-image(cornerImg, 640 - 100, 382 - 100, 100, 100);
-
 function draw() {
   background(bg);
   image(cornerImg, 0, 0, 60, 60); // Here I'm trying to place the image in the top left.
   image(lightImg, 640 - 100, 0, 50, 50);
-  image(light2Img,  0, 382 - 100, 30, 40);
+  image(light2Img,  0, 382 - 100, 30, 40); // I needed to manually subtract everything by getting the canvas width and height.
   image(soil, 640 - 100, 382 - 100, 46, 46); // I'm resizing the images so they're not too big, and I'm also placing them in corners. I want thhem to look a littlle messy for artistic purposes. I want everything to look rather abstract and chaotic.
   
   // Here I'm making the timer change as the project progresses.
